@@ -25,8 +25,8 @@ const corsOptions = {
   origin: (origin, callback) => {
     const allowed = [
       undefined, // allow curl/postman
-      "http://localhost:3000", // frontend (Next.js)
-      "http://localhost:3001", // admin-panel (React)
+      "https://prime-tech-2025.vercel.app/", // frontend (Next.js)
+      "https://prime-tech-2025.vercel.app/", // admin-panel (React)
     ];
     if (allowed.includes(origin)) callback(null, true);
     else callback(new Error("Not allowed by CORS"));
